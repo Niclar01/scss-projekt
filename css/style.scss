@@ -88,3 +88,36 @@ nav{
         color: partial.$primary-color;
     }
 }
+
+/* BANNER SEKTION */
+
+.header-img{
+    grid-column: 1/6;
+    border-bottom: 4px solid partial.$primary-color;
+    background-image: url(../img/computer.jpg); /* Billede indsat direkte */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh; /* svarer ca. til 75% af skærmens str. */
+    width: 100vw;
+    margin-bottom: 1em;
+
+        .banner-tekst{
+            position: absolute;
+            left: 5%;
+            top: 25%;
+        }
+
+        h1{
+            font-size: 3.5vw; /* vw tilpasser sig skærm str. */
+        }
+        
+        p{
+            font-size: 2vw;
+        }
+
+        a{
+            @include partial.btn;
+            position: absolute;
+        }
+}
